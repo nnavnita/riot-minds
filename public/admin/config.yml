@@ -1,0 +1,61 @@
+# Save this as: public/admin/config.yml
+
+backend:
+  name: git-gateway
+  branch: main # Change to 'master' if your repo uses master branch
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "content"
+    label: "Site Content"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "content/home.json"
+        fields:
+          - { label: "Hero Title Line 1", name: "heroTitle1", widget: "string", default: "Connect with Top" }
+          - { label: "Hero Title Line 2", name: "heroTitle2", widget: "string", default: "Freelance Talent" }
+          - { label: "Hero Description", name: "heroDescription", widget: "text", default: "Riot Minds brings together exceptional freelancers and businesses seeking quality work. Join our growing network today." }
+          - { label: "CTA Button 1 Text", name: "ctaButton1", widget: "string", default: "Join as Freelancer" }
+          - { label: "CTA Button 2 Text", name: "ctaButton2", widget: "string", default: "Browse Talent" }
+          
+          - label: "Features"
+            name: "features"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Icon", name: "icon", widget: "select", options: ["Users", "Briefcase", "Clock"] }
+
+      - label: "About Us"
+        name: "about"
+        file: "content/about.json"
+        fields:
+          - { label: "Page Title", name: "pageTitle", widget: "string", default: "About Riot Minds" }
+          - { label: "Paragraph 1", name: "paragraph1", widget: "text" }
+          - { label: "Paragraph 2", name: "paragraph2", widget: "text" }
+          - { label: "Paragraph 3", name: "paragraph3", widget: "text" }
+          - { label: "Mission Title", name: "missionTitle", widget: "string", default: "Our Mission" }
+          - { label: "Mission Text", name: "missionText", widget: "text" }
+
+      - label: "Job Roles"
+        name: "jobRoles"
+        file: "content/jobRoles.json"
+        fields:
+          - label: "Available Roles"
+            name: "roles"
+            widget: "list"
+            field: { label: "Role Name", name: "name", widget: "string" }
+
+      - label: "Form Settings"
+        name: "formSettings"
+        file: "content/formSettings.json"
+        fields:
+          - { label: "Form Title", name: "formTitle", widget: "string", default: "Join Our Network" }
+          - { label: "Success Message", name: "successMessage", widget: "string", default: "Successfully submitted! Redirecting to freelancer directory..." }
+          - { label: "Freelancers Page Title", name: "freelancersTitle", widget: "string", default: "Our Talent Network" }
+          - { label: "Search Placeholder", name: "searchPlaceholder", widget: "string", default: "Search by name, role, or location..." }
+          - { label: "Empty State Message", name: "emptyMessage", widget: "string", default: "No freelancers found. Be the first to join!" }
+          
