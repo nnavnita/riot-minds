@@ -1,0 +1,24 @@
+{
+  "heroTitle1": "Connect with Top",
+  "heroTitle2": "Freelance Talent",
+  "heroDescription": "Riot Minds brings together exceptional freelancers and businesses seeking quality work. Join our growing network today.",
+  "ctaButton1": "Join as Freelancer",
+  "ctaButton2": "Browse Talent",
+  "features": [
+    {
+      "title": "Quality Network",
+      "description": "Connect with verified freelancers across multiple disciplines",
+      "icon": "Users"
+    },
+    {
+      "title": "Diverse Skills",
+      "description": "Find experts in design, development, marketing, and more",
+      "icon": "Briefcase"
+    },
+    {
+      "title": "Flexible Hours",
+      "description": "Work with talent across different timezones and schedules",
+      "icon": "Clock"
+    }
+  ]
+}
